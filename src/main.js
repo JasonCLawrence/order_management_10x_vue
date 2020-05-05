@@ -52,10 +52,10 @@ if (accessToken) {
     axios.defaults.headers.common['Authorization'] = 'Bearer ' + accessToken
     store.commit('authenticate', accessToken)
 }
-//axios.defaults.baseURL = 'http://localhost:8000/api/v1/'
+//axios.defaults.baseURL = 'http://34.220.123.185/api/v1/'
 //axios.defaults.baseURL = 'https://oms.clientloop.io/api/v1/'
 axios.defaults.baseURL =
-    process.env.VUE_APP_API_URL || 'http://localhost:8000/api/v1/'
+    process.env.VUE_APP_API_URL || 'http://34.220.123.185/api/v1/'
 
 addRefreshTokenFlow(axios)
 

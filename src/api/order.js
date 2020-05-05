@@ -100,7 +100,7 @@ export default {
         refreshToken(axios).then(() => {
             let url =
                 // 'https://oms.clientloop.io/api/v1/report?' +
-                `http://localhost:8000/api/v1/order/${id}/download?` +
+                `http://34.220.123.185/api/v1/order/${id}/download?` +
                 encodeData({
                     token: localStorage.getItem('accessToken'),
                 })
@@ -113,7 +113,7 @@ export default {
         refreshToken(axios).then(() => {
             let url =
                 // 'https://oms.clientloop.io/api/v1/report?' +
-                `http://localhost:8000/api/v1/order/${id}/summary?` +
+                `http://34.220.123.185/api/v1/order/${id}/summary?` +
                 encodeData({
                     token: localStorage.getItem('accessToken'),
                 })
